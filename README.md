@@ -1,5 +1,10 @@
 # Flutter notes
 
+## .hgignore file
+
+[.hgignore](hgignore)
+
+
 ## Troubleshooting when clonig to another workstation
 
 ```

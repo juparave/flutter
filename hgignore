@@ -1,0 +1,36 @@
+syntax:glob
+
+# temp files
+*~
+.*.swp
+
+# A hidden file created by the Mac OS X Finder.
+.DS_Store
+
+.atom/
+.idea
+.packages
+.pub/
+build/
+ios/.generated/
+packages
+pubspec.lock
+.flutter-plugins
+
+android/local.properties
+android/.gradle
+android/app/proguard-rules.pro
+android/key.properties
+ios/Pods/
+ios/Runner.xcodeproj/xcuserdata
+ios/.symlinks/plugins
+ios/Runner.xcworkspace/xcuserdata
+
+
+syntax: regexp
+# to include ios/Flutter/Debug.xcconfig, ios/Flutter/Generated.xcconfig
+# and ios/Flutter/Release.xcconfig
+.*/ios/Flutter/(?!.*xcconfig).*
+
+# Visual Studio Code, keep settings files
+(.*/)?.vscode/(?!settings\.json|tasks\.json|launch\.json|extensions\.json).*
