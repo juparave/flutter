@@ -21,11 +21,13 @@ android/local.properties
 android/.gradle
 android/app/proguard-rules.pro
 android/key.properties
+
+ios/Podfile.lock
+ios/.symlinks/plugins
+ios/.symlinks/flutter
 ios/Pods/
 ios/Runner.xcodeproj/xcuserdata
-ios/.symlinks/plugins
 ios/Runner.xcworkspace/xcuserdata
-
 
 syntax: regexp
 # to include ios/Flutter/Debug.xcconfig, ios/Flutter/Generated.xcconfig
