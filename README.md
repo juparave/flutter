@@ -12,7 +12,7 @@
 
 Created and implement launcher logo with instructions from:
 
-https://medium.com/@psyanite/how-to-add-app-launcher-icons-in-flutter-bd92b0e0873a
+[How to add app launcher icons in flutter](https://medium.com/@psyanite/how-to-add-app-launcher-icons-in-flutter-bd92b0e0873a)
 
 ## Setting Application name
 
