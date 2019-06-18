@@ -6,7 +6,7 @@
 
 ## Index
 
-[troubledhooting.md](Troubleshooting Flutter)
+[troubleshooting.md](Troubleshooting Flutter)
 
 ## Launcher
 
