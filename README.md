@@ -7,6 +7,7 @@
 ## Index
 
 [Troubleshooting Flutter](troubleshooting.md)
+[Upload images to server](upload_image.md)
 
 ## Launcher
 
