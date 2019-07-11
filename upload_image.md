@@ -83,6 +83,37 @@ import 'package:image_picker/image_picker.dart';
 
     }
   }
+
+  // part of bicycle.dart
+  Future<Map> putBicycle(Bicycle bicycle) async {
+    return http.ajaxPost('bicycle/post', bicycle.toJson());
+  }
+
+  // part of http-helper.dart
+  Future<Map> ajaxPost(String serviceName, Map data) async {
+    var responseBody = json.decode('{"data": "", "status": "NOK"}');
+    var urlBase = await _getUrlBase();
+
+    try {
+      var response = await http.post(urlBase + '$_serverApi$serviceName',
+          body: json.encode(data),
+          headers: {
+            'X-DEVICE-ID': await _getDeviceIdentity(),
+            'X-TOKEN': await _getMobileToken(),
+            'X-APP-ID': _applicationId,
+            'Content-Type': 'application/json; charset=utf-8'
+          });
+      if (response.statusCode == 200) {
+        responseBody = json.decode(response.body);
+      }
+    } catch (e) {
+      // An error was received
+      throw new Exception("AJAX ERROR");
+    }
+    return responseBody;
+  }
+
+
 ```
 
 ## Server side using python
