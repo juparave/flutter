@@ -2,7 +2,7 @@
 
 ## Status bar color
 
-![Status Bar]({{ site.url }}/images/status_bar.png)
+![Status Bar]({{ site.url }}/assets/status_bar.png)
 
 ### With AppBar
 
