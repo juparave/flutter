@@ -6,8 +6,9 @@
 
 ## Index
 
-[Troubleshooting Flutter](troubleshooting.md)
-[Upload images to server](upload_image.md)
+* [Troubleshooting Flutter](troubleshooting.md)
+* [Upload images to server](upload_image.md)
+* [Theming](theming.md)
 
 ## Launcher
 
