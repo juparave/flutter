@@ -27,12 +27,16 @@ Scaffold(
 
 ### Without AppBar
 
-On builer function:
+On builder function:
 
 ```dart
 SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
   statusBarColor: Colors.black, 
 ));
+
+// also
+SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
+
 ```
 
 or
@@ -41,4 +45,8 @@ or
 SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
   statusBarColor: Colors.white,
 ));
+
+// also
+SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+
 ```
