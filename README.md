@@ -9,6 +9,7 @@
 * [Troubleshooting Flutter](troubleshooting.md)
 * [Upload images to server](upload_image.md)
 * [Theming](theming.md)
+* [Firebase Auth](firebase_auth.md)
 
 ## Create a new app
 
