@@ -44,3 +44,8 @@ Widget _handleWindowDisplay() {
 }
 
 ```
+
+
+## Google Sign-in
+
+To implement Google Sign-in follow instructions from [Implementing Google Sign In](https://medium.com/flutter-community/flutter-implementing-google-sign-in-71888bca24ed)
