@@ -28,6 +28,14 @@ Created and implement launcher logo with instructions from:
 
 [How to add app launcher icons in flutter](https://medium.com/@psyanite/how-to-add-app-launcher-icons-in-flutter-bd92b0e0873a)
 
+## Icon and Splashscreen
+
+Generate online bundle with https://apetools.webprofusion.com/#/tools/imagegorilla
+
+## Real splash
+
+ref: https://medium.com/flutter-community/flutter-2019-real-splash-screens-tutorial-16078660c7a1
+
 ## Setting Application name
 
 ### Android
