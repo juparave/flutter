@@ -47,7 +47,7 @@ Open AndroidManifest.xml (located at android/app/src/main)
 ```
 
 ### iOS
-Open info.plist file
+Open Info.plist file (located at ios/Runner/Info.plist)
 
 ```
 <key>CFBundleName</key>
