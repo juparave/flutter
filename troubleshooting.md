@@ -1,6 +1,5 @@
-# Troubleshooting Flutter
-
 [back](README.md)
+# Troubleshooting Flutter
 
 ## Troubleshooting when clonig to another workstation
 
