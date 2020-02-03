@@ -53,3 +53,12 @@ Open Info.plist file (located at ios/Runner/Info.plist)
 <key>CFBundleName</key>
 <string>App Name</string> // Your app name here
 ```
+## Recording screen
+
+### iOS
+
+Start recording with:
+
+    $ xcrun simctl io booted recordVideo --codec=h264 --mask=black --force appVideo.mov
+    
+Stop record with control-c
