@@ -1,4 +1,4 @@
-# Publishing FLutter Apps
+# Publishing Flutter Apps
 
 To avoid Non-public API usage - The app references non-public symbols in Frameworks/Flutter.framework/Flutter: _ptrace. Clean workspace as follows
 
@@ -6,7 +6,10 @@ To avoid Non-public API usage - The app references non-public symbols in Framewo
     $ rm -rf ios/Flutter/Flutter.framework
     $ flutter build ios --release
     
+Be sure to select 
 After that, create binary from Xcode **Product** -> **Archive**
+
+![Product -> Archive](/assets/product_archive.png)
 
 #### When in doubt, just wipe and reinstall, rather than manually deal with cascading dependencies.
 
