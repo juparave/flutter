@@ -56,6 +56,26 @@ post_install do |installer|
 end
 ```
 
+#### Too many symbol files
+
+ref: [iOS newbie gotcha reminders](https://medium.com/ios-newbies/ios-swift-newbie-gotcha-reminders-5-too-many-symbol-files-1d3b20691f52)
+
+Enable *dwarf* for `DEBUG_INFORMATION_FORMAT` on Podfile
+
+```
+...
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['ENABLE_BITCODE'] = 'YES'
+      config.build_settings['SWIFT_VERSION'] = '4.2'
+      config.build_settings['DEBUG_INFORMATION_FORMAT'] = 'dwarf'
+    end
+  end
+end
+...
+```
+
 ## Android
 
 https://play.google.com/apps/publish
