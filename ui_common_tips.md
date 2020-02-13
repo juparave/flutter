@@ -10,11 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+  
     // lock screen orientation
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown
     ]);
+    
     // MultiProvider for top-level services that can be created right away
     return MultiProvider(
       providers: [
