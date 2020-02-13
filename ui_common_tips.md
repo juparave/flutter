@@ -38,3 +38,34 @@ class MyApp extends StatelessWidget {
 }
 
 ```
+
+## Change StatusBar Color
+
+Using SystemChrome.setSystemUIOverlayStyle
+
+```dart
+  @override
+  Widget build(BuildContext context) {
+
+    // lock screen orientation
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown
+    ]);
+
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.blueGrey,
+      statusBarBrightness: Brightness.dark,
+      systemNavigationBarColor: Colors.white,
+      systemNavigationBarIconBrightness: Brightness.dark
+    ));
+
+```
+
+Another quick method to adjust:
+
+```dart
+...
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
+...
+```
