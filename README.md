@@ -10,6 +10,7 @@
 * [Upload images to server](upload_image.md)
 * [Theming](theming.md)
 * [Firebase Auth](firebase_auth.md)
+* [UI common tips](ui_common_tips.md)
 
 ## Create a new app
 
