@@ -11,6 +11,7 @@
 * [Theming](theming.md)
 * [Firebase Auth](firebase_auth.md)
 * [UI common tips](ui_common_tips.md)
+* [Futures](futures.md)
 
 ## Create a new app
 
