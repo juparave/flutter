@@ -25,5 +25,5 @@ appointmentTime(DateTime? date) {
 }
 ```
 
-![image](https://github.com/juparave/flutter/blob/master/assets/FontFeature.tabularFigures.png)
-![gif](https://github.com/juparave/flutter/blob/master/assets/1*L_RP__onb-LHcwYbXNwD9g.gif)
+![image]({{ site.url }}/flutter/blob/master/assets/FontFeature.tabularFigures.png)
+![gif]({{ site.url }}/juparave/flutter/blob/master/assets/1*L_RP__onb-LHcwYbXNwD9g.gif)
