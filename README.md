@@ -16,10 +16,8 @@
 
 ## Create a new app
 
-    $ flutter create --androidx -t app --org com.companyname -a kotlin -i swift --description 'Your App Description' myapp
-    
-* --androidx Option Migration androidX, Platform languages
-* -t app template (default) Generate a Flutter application
+    $ flutter create --project-name myapp --org com.companyname -a kotlin -i swift --description 'Your App Description' myapp
+
 * --org com.companyname iOS PRODUCT_BUNDLE_IDENTIFIER and applicationId for Android
 * -a kotlin to write Android code using Kotlin
 * -i swift iOS code using Swift

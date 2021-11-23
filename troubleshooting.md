@@ -1,6 +1,39 @@
 [back](README.md)
 # Troubleshooting Flutter
 
+## While building module 'GoogleUtilities' imported from ...
+
+Most of the times when adding or upgradig dependencies the compile fails.
+
+Some steps to consider
+
+### Podfile
+
+Check at the top of ios/Podfile
+
+```ruby
+platform :ios, '10.0'
+```
+
+Check at the end of ios/Podfile
+
+```ruby
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    flutter_additional_ios_build_settings(target)
+    target.build_configurations.each do |config|
+      config.build_settings.delete 'IPHONEOS_DEPLOYMENT_TARGET'
+    end
+  end
+end
+```
+
+### Clean workspace
+
+    $ flutter clean
+
+
+
 ## Troubleshooting when clonig to another workstation
 
 ```
