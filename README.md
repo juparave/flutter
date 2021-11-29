@@ -31,7 +31,8 @@ Created and implement launcher logo with instructions from:
 
 ## Icon and Splashscreen
 
-Generate online bundle with https://apetools.webprofusion.com/#/tools/imagegorilla
+* Generate online bundle with https://apetools.webprofusion.com/#/tools/imagegorilla
+* Generate App Icon with https://appicon.co/
 
 ## Real splash
 
