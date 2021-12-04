@@ -11,6 +11,7 @@
 * [Theming](theming.md)
 * [Firebase Auth](firebase_auth.md)
 * [UI common tips](ui_common_tips.md)
+* [Layouts](layouts.md)
 * [Futures](futures.md)
 * [Font tips](fonts.md)
 
