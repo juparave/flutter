@@ -66,3 +66,13 @@ Start recording with:
     $ xcrun simctl io booted recordVideo --codec=h264 --mask=black --force appVideo.mov
     
 Stop record with control-c
+
+### MacOS
+
+Enable desktop support
+
+At the command line, perform the following command to enable desktop support
+
+    $ flutter config --enable-macos-desktop
+
+For more information, see [Desktop support for Flutter](https://docs.flutter.dev/desktop)
