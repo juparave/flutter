@@ -49,3 +49,9 @@ Once you've installed everything and configured your .zshrc or .bash_profile acc
 chruby 3.1.0
 
 Whether you need to configure .zshrc or .bash_profile depends on which shell you're using.
+
+## ffi
+
+    $ brew upgrade ffi
+    $ gem uninstall ffi
+    $ gem install ffi -v 1.13.1 -- --disable-system-libffi
