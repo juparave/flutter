@@ -17,12 +17,16 @@
 
 ## Create a new app
 
-    $ flutter create --project-name myapp --org com.companyname -a kotlin -i swift --description 'Your App Description' myapp
+    $ flutter create --project-name myapp --org com.companyname --android-language kotlin --ios-language swift --description "My super app" myapp
 
 * --org com.companyname iOS PRODUCT_BUNDLE_IDENTIFIER and applicationId for Android
-* -a kotlin to write Android code using Kotlin
-* -i swift iOS code using Swift
+* -android-language kotlin to write Android code using Kotlin
+* -ios-language swift iOS code using Swift
 * --description 'Your App Description' sets package description in our pubspec.yaml
+
+Usign `skeleton` template to prep app for localization
+
+    $ flutter -t skeleton create --project-name myapp --org com.companyname --android-language kotlin --ios-language swift --description "My super app" myapp
 
 ## Launcher
 
