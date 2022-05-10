@@ -27,7 +27,7 @@
 
 Usign `skeleton` template to prep app for localization
 
-    $ flutter -t skeleton create --project-name myapp --org com.companyname --android-language kotlin --ios-language swift --description "My super app" myapp
+    $ flutter create -t skeleton create --project-name myapp --org com.companyname --android-language kotlin --ios-language swift --description "My super app" myapp
 
 ## Launcher
 
