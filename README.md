@@ -15,6 +15,7 @@
 * [Layouts](layouts.md)
 * [Futures](futures.md)
 * [Font tips](fonts.md)
+* [macOS](macos.md)
 
 ## Create a new app
 
