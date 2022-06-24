@@ -63,8 +63,18 @@ Open AndroidManifest.xml (located at android/app/src/main)
 ### iOS
 Open Info.plist file (located at ios/Runner/Info.plist)
 
+#### CFBundleName
+A user-visible short name for the bundle. This name can contain up to 15 characters. 
+The system may display it to users if CFBundleDisplayName isn't set.
+
+#### CFBundleDisplayName
+The user-visible name for the bundle, used by Siri and visible on the iOS Home screen.
+
+
 ```
 <key>CFBundleName</key>
+<string>App Name</string> // Your app name here
+<key>CFBundleDisplayName</key>
 <string>App Name</string> // Your app name here
 ```
 ## Recording screen
