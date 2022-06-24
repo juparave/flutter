@@ -40,6 +40,7 @@ Created and implement launcher logo with instructions from:
 
 [How to add app launcher icons in flutter](https://medium.com/@psyanite/how-to-add-app-launcher-icons-in-flutter-bd92b0e0873a)
 [Create adaptive icons in Flutter with flutter_launcher_icons](https://blog.logrocket.com/create-adaptive-icons-flutter-launcher-icons/)
+[Flutter launcher icons](https://pub.dev/packages/flutter_launcher_icons)
 
 ## Icon and Splashscreen
 
