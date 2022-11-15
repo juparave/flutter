@@ -1,5 +1,7 @@
 # Using nvim
 
+ref: https://x-team.com/blog/neovim-flutter/
+
 ## Plugins
 
     call plug#begin('~/.vim/plugged')
