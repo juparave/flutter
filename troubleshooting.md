@@ -1,4 +1,5 @@
 [back](README.md)
+
 # Troubleshooting Flutter
 
 ## While building module 'GoogleUtilities' imported from ...
@@ -32,7 +33,32 @@ end
 
     $ flutter clean
 
+### superclean.sh
 
+A shell script to clean dependencies and pods
+
+```bash
+#!/usr/bin/env bash
+
+echo -e "\033[0;32m ** Removing ios/Podfile.lock \033[0;0m"
+rm -rf ios/Pods ios/Podfile.lock
+echo -e "\033[0;32m ** Removing ~/.pub-cache/hosted/pub.dartlang.org/ \033[0;0m"
+rm -rf ~/.pub-cache/hosted/pub.dartlang.org/
+echo -e "\033[0;32m ** Running flutter clean... \033[0;0m"
+flutter clean
+echo -e "\033[0;32m ** Removing ios/Flutter/Flutter.framework \033[0;0m"
+rm -rf ios/Flutter/Flutter.framework
+echo -e "\033[0;32m ** Running flutter packages get \033[0;0m"
+flutter packages get
+echo -e "\033[0;32m ** Running pod repo update \033[0;0m"
+pod repo update
+cd ios
+echo -e "\033[0;32m ** Running pod deintegrate --verbose \033[0;0m"
+pod deintegrate --verbose
+echo -e "\033[0;32m ** Running pod install \033[0;0m"
+pod install --verbose
+cd ..
+```
 
 ## Troubleshooting when clonig to another workstation
 
