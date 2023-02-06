@@ -110,3 +110,31 @@ Sometimes dependencies gets mixed with updates and version locks, one way to fig
 Update dependencies with this below command line:
 
     flutter pub upgrade --major-versions
+
+## Firebase adding com.google.android.gms.permission.AD_ID permission
+
+`android/app/build.gradle` add the following
+
+```gradle
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation('com.google.firebase:firebase-analytics') {
+        exclude module: "play-services-ads-identifier"
+        exclude module: "play-services-measurement"
+        exclude module: "play-services-measurement-sdk"
+    }
+    implementation('com.google.firebase:firebase-core') {
+        exclude module: "play-services-ads-identifier"
+        exclude module: "play-services-measurement"
+        exclude module: "play-services-measurement-sdk"
+    }
+}
+```
+
+These efforts and adding the following to the manifest.xml did not worked, only accept to use `AD_ID`
+
+```
+<uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+```
