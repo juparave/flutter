@@ -96,3 +96,13 @@ To solve this, add to repository the following files
     {PROJECT_NAME}/ios/Flutter/Debug.xcconfig
     {PROJECT_NAME}/ios/Flutter/Generated.xcconfig
     {PROJECT_NAME}/ios/Flutter/Release.xcconfig
+
+## Dependencies
+
+Sometimes dependencies gets mixed with updates and version locks, one way to figure out whats happening
+
+    flutter pub outdated
+    flutter pub upgrade
+
+    flutter channel master
+    flutter upgrade
