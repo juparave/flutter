@@ -106,3 +106,7 @@ Sometimes dependencies gets mixed with updates and version locks, one way to fig
 
     flutter channel master
     flutter upgrade
+
+Update dependencies with this below command line:
+
+    flutter pub upgrade --major-versions
