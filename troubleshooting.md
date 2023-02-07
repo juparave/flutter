@@ -138,3 +138,26 @@ These efforts and adding the following to the manifest.xml did not worked, only 
         android:name="com.google.android.gms.permission.AD_ID"
         tools:node="remove" />
 ```
+
+A user claim it worked: https://github.com/firebase/firebase-android-sdk/issues/2582#issuecomment-1261875254
+
+    Configuration that worked for me
+    With the configuration as below I was able to get rid of the warning in GooglePlay console:
+    app/build.gradle
+
+    configurations.all {
+        exclude group: 'com.google.android.gms', module : 'play-services-ads'
+        exclude group: 'com.google.android.gms', module : 'play-services-ads-identifier'
+        exclude group: 'com.google.android.gms', module : 'play-services-ads-lite'
+    }
+    
+    app/src/main/AndroidManifest.xml
+
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false" />
+        <meta-data android:name="google_analytics_default_allow_ad_personalization_signals" android:value="false" />
+        
+    Again, if you have the following line in your AndroidManifest, ⚠️try removing it.
+
+    <!-- remove this -->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove" />
+
