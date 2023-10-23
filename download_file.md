@@ -15,12 +15,12 @@ dependencies:
   permission_handler: ^11.0.1
 ```
 
-The path_provider package is used to access local file system paths, while
-permission_handler is used to request and check necessary permissions.
+The `path_provider` package is used to access local file system paths, while
+`permission_handler` is used to request and check necessary permissions.
 
 ### Permission handling
 
-Before downloading files, it's crucial to request and check permission from the
+Before downloading files, it's crucial to request and **check permission** from the
 user. Without the necessary permissions, you won't be able to save the
 downloaded file locally. You can create a permission-checking function like
 this:
@@ -43,7 +43,7 @@ Future<bool> checkPermission() async {
 }
 ```
 
-Make sure to call checkPermission() before proceeding with the download.
+Make sure to call `checkPermission()` before proceeding with the download.
 
 ### File Download
 
@@ -103,9 +103,9 @@ specified directory.
 
 ### Android Permissions
 
-On Android, you need to add permissions to your AndroidManifest.xml file to
+On Android, you need to add permissions to your `AndroidManifest.xml` file to
 access the internet and write external storage. Add the following lines inside
-the <manifest> tag:
+the `<manifest>` tag:
 
 
 ```xml
