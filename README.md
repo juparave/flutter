@@ -7,6 +7,7 @@
 ## Index
 
 * [Troubleshooting Flutter](troubleshooting.md)
+* [Downloads](download_file.md)
 * [Ruby](ruby.md)
 * [Upload images to server](upload_image.md)
 * [Theming](theming.md)
