@@ -17,6 +17,7 @@
 * [Futures](futures.md)
 * [Font tips](fonts.md)
 * [macOS](macos.md)
+* [appBar](app_bar.md)
 
 External links:
 
