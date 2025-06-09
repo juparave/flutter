@@ -20,6 +20,7 @@
 * [appBar](app_bar.md)
 * [iOS](ios.md)
 * [Android](android.md)
+* [iOS CI with fastlane](fastlane_ref.md)
 
 External links:
 
