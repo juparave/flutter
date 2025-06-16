@@ -2,6 +2,12 @@
 
 # Flutter App Signing Guide for Google Play Store
 
+## Getting the debug key signature
+
+```
+keytool -list -v -alias androiddebugkey -keystore ~/.android/debug.keystore
+```
+
 ## Creating a Keystore
 
 To sign your Flutter app for uploading to the Google Play Store, you need to create a keystore. This is done using the `keytool` command-line utility, which is part of the Java Development Kit (JDK).
