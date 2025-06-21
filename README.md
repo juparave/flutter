@@ -26,6 +26,47 @@ External links:
 
 * [TDD in Flutter](https://q.agency/blog/tdd-in-flutter-with-example-application-using-riverpod-and-firebase)
 
+
+## Installing Flutter and Dart in linux
+
+Flutter with fvm (flutter version manager)
+
+```sh
+# Install Dart SDK (using apt, official Google repo)
+sudo apt-get update
+sudo apt-get install -y apt-transport-https wget
+wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'wget -qO- https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list’
+sudo apt-get update
+sudo apt-get install -y dart
+# Add Dart to PATH
+export PATH="$PATH:/usr/lib/dart/bin”
+# Install FVM globally
+dart pub global activate fvm
+# Add FVM to PATH
+export PATH="$PATH:$HOME/.pub-cache/bin”
+# Install Flutter version from .fvmrc
+fvm install
+# Get Flutter dependencies
+fvm flutter pub get
+```
+
+Flutter 
+
+```
+# Install Dart SDK (using apt, official Google repo)
+sudo apt-get update
+sudo apt-get install -y apt-transport-https wget
+wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'wget -qO- https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list’
+sudo apt-get update
+sudo apt-get install -y dart
+# Add Dart to PATH
+export PATH="$PATH:/usr/lib/dart/bin”
+flutter pub get
+```
+
+
 ## Create a new app
 
     $ flutter create --project-name myapp --org com.companyname --android-language kotlin --ios-language swift --description "My super app" myapp
@@ -103,3 +144,4 @@ At the command line, perform the following command to enable desktop support
     $ flutter config --enable-macos-desktop
 
 For more information, see [Desktop support for Flutter](https://docs.flutter.dev/desktop)
+
