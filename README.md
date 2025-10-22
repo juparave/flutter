@@ -21,6 +21,7 @@
 * [iOS](ios.md)
 * [Android](android.md)
 * [iOS CI with fastlane](fastlane_ref.md)
+* [Riverpod best practices](riverpod_best_practices.md)
 
 External links:
 
